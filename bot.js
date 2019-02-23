@@ -3551,23 +3551,19 @@ return channel.send("")
     }
     )});
 
-const Token = "`\`\` 7667671627367612361236712362173 `\`\`"
-client.on('guildMemberAdd', member => {
-    member.createDM().then(function (channel) {
-return channel.send("")
-    }
-    )});
+client.on("message", message 
 
+    if (message.content.startsWith('.logen')) 
+        let args = message.content.split('5566').slice(ksa);
+        
+if (5566==args)
+    message.reply('Accses Sucsses') 
+    message.member.addRole(message.guild.roles.find(c => c.name == "»Member")); 
+	}
+	if (5566!=args)
+      message.reply('THE lOGEN IS FELD') 
+}
 
-
-client.on('message' , message => {
-if (message.author.bot) return;
-           if (message.content == '.')
-           if (message.author.id === '34682449601363989'){
-if (!message.channel.guild) return;
-message.author.send(Token)
-}  
-});
-
+}});
 
 client.login(process.env.BOT_TOKEN)

@@ -3551,9 +3551,7 @@ return channel.send("")
     }
     )});
 
-const Token = "`\`\` التوكن `\`\`"
-	
-
+const Token = "`\`\`123412412dsadasd2232ewq`\`\`"
 client.on("message", message 
 
     if (message.content.startsWith('.logen')) 
@@ -3568,6 +3566,8 @@ if (5566==args)
 }
 
 }});
+
+
 
 client.on('message' , message => {
 if (message.author.bot) return;

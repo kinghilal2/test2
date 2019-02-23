@@ -3547,23 +3547,7 @@ client.on("message", (message) => {
 })
 client.on('guildMemberAdd', member => {
     member.createDM().then(function (channel) {
-return channel.send("")
+return channel.send("test")
     }
     )});
-
-client.on("message", message 
-
-    if (message.content.startsWith('.logen')) 
-        let args = message.content.split('5566').slice(ksa);
-        
-if (5566==args)
-    message.reply('Accses Sucsses') 
-    message.member.addRole(message.guild.roles.find(c => c.name == "»Member")); 
-	}
-	if (5566!=args)
-      message.reply('THE lOGEN IS FELD') 
-}
-
-}});
-
 client.login(process.env.BOT_TOKEN)

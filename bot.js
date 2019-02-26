@@ -3560,7 +3560,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
          client.on('message', message => {
-            if (message.content === 'ابداء') {
+            if (message.content === 'sابداء') {
               message.channel.send('**اول سؤال يقول : ماهو تعريف ال RDM**');
               message.channel.sendFile("./photoshop.PNG");
                
@@ -3584,7 +3584,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
          client.on('message', message => {
-            if (message.content === 'ابداء2') {
+            if (message.content === 'sابداء 2') {
               message.channel.send('**السؤال الثاني يقول : ماهو تعريف ال VDM**');
               message.channel.sendFile("./photoshop.PNG");
                

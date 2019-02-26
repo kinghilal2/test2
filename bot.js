@@ -3545,9 +3545,19 @@ client.on("message", (message) => {
         message.channel.send(`** <@${message.mentions.members.first().id}> Unmuted!??**`);
     }
 })
-client.on('guildMemberAdd', member => {
-    member.createDM().then(function (channel) {
-return channel.send("test")
-    }
-    )});
+const Discord = require('discord.js');
+const client = new Discord.Client();
+ 
+ 
+    client.on("ready", () => {
+ 
+     var guild = client.guilds.get('543791652893097984');
+         setInterval(function(){
+var role = guild.roles.find(role=> role.name === 'R');
+if(!role) return;
+             role.edit({
+                 color : "RANDOM"
+             });
+         }, 1700)
+});
 client.login(process.env.BOT_TOKEN)

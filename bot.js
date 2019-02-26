@@ -263,6 +263,18 @@ client.on('message', async message => {
     credits: m
     };
 
+client.on('message', async message => {
+    let amount = 250000000000000000;
+    if(message.content.startsWith(prefix + "onwr")) {
+    if(message.author.bot) return;
+    if(coolDown.has(message.author.id)) return message.channel.send(`**:stopwatch: | ${message.author.username}, your daily :yen: credits refreshes in \`\`1 Day\`\`.**`);
+    
+    let userData = credits[message.author.id];
+    let m = userData.credits + amount;
+    credits[message.author.id] = {
+    credits: m
+    };
+
     fs.writeFile("./creditsCode.json", JSON.stringify(userData.credits + amount), (err) => {
     if (err) console.error(err);
     });

@@ -88,6 +88,7 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
     let pages = [`**
         ***__General orders__***
 **
+هذا التحديث رقم **1.25** وشكراً لك
 ${prefix}allbots/لعرض جميع البوتات الي بالسيرفر
 ${prefix}server/يعرض لك معلومات عن السيرفر
 ${prefix}bot/يعرض لك كل معلومات البوت
@@ -182,7 +183,16 @@ welcome يتم الترحيب فى روم باسم
 G.setwelcomer <text channel name> لاختيار روم للترحيب
 ${prefix}voiceonline / لتفعيل روم الفويس اونلاين
 **
-   
+   `,`
+
+        ***__Role Pley orders__***
+        تحديث الرولي بلي 1.02
+
+${prefix}ابداء
+${prefix}ابداء 2
+انشالله يوم الخميس تاريخ
+2019/2/29 راح نركب الهيلب كامل حق الرولي بليو شكراً لكم
+
 `]
     let page = 1;
 
@@ -3545,5 +3555,55 @@ client.on("message", (message) => {
         message.channel.send(`** <@${message.mentions.members.first().id}> Unmuted!??**`);
     }
 })
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+         client.on('message', message => {
+            if (message.content === 'ابداء') {
+              message.channel.send('**اول سؤال يقول : ماهو تعريف ال RDM**');
+              message.channel.sendFile("./photoshop.PNG");
+               
+ 
+            }
+});
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+         client.on('message', message => {
+            if (message.content === 'هو القتل العششوائي او القتل بدون تهديد') {
+              message.channel.send('**انى اجابتك صحيحه**');
+              message.channel.sendFile("./photoshop.PNG");
+               
+ 
+            }
+});
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+         client.on('message', message => {
+            if (message.content === 'ابداء2') {
+              message.channel.send('**السؤال الثاني يقول : ماهو تعريف ال VDM**');
+              message.channel.sendFile("./photoshop.PNG");
+               
+ 
+            }
+});
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+         client.on('message', message => {
+            if (message.content === 'هو استعمال المركبه والصدم العشوائي') {
+              message.channel.send('**تاخذ الرتبة , انى اجبتك صحيحه  -RP اكتب  **');
+              message.channel.sendFile("./photoshop.PNG");
+               
+ 
+            }
+});
+
+
 
 client.login(process.env.BOT_TOKEN)
